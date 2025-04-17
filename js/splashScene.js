@@ -20,7 +20,7 @@ class SplashScene extends Phaser.Scene {
 * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
 */
   init(data) {
-    this.cameras.main.setBackgroudColor('ffffff')
+    this.cameras.main.setBackgroundColor('ffffff')
   }
 
 /** Can be defined on you own Scenes.
