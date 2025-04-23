@@ -3,15 +3,15 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 // Created by: Olivia Ten Den
-// Created on: April 17
-// This is the Splash Scene
+// Created on: April 23
+// This is the Title Scene
 
-class SplashScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   /**
   * This method is the construtor.
   */
   constructor() {
-    super({ key: 'splashScene' })
+    super({ key: 'titleScene' })
   }
   /**
    * Can be defined on your own Scenes.
@@ -27,7 +27,7 @@ class SplashScene extends Phaser.Scene {
    * Use it to load assets.
    */
   preload() {
-    console.log('Splash Scene')
+    console.log('Title Scene')
   }
 
   /**Can be defined on your own Scenes.
@@ -44,9 +44,8 @@ class SplashScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms since the last frame
    */
   update(time, delta) {
-    this.scene.switch('titleScene')
   }
   //pass
 }
 
-export default SplashScene
+export default TitleScene
