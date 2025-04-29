@@ -28,7 +28,7 @@ class MenuScene extends Phaser.Scene {
   }
 
   /** 
-   * Can be defined on you own Scenes.
+   * Can be defined on your own Scenes.
    * Use it to load assets.
    */
   preload() {
