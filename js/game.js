@@ -8,10 +8,12 @@
 
 import SplashScene from './splashScene.js'
 import TitleScene from './titleScene.js'
+import MenuScene from './menuScene.js'
 
 //Our game scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
+const menuScene = new MenuScene()
 
 /**
  * Start Phaser Game
@@ -41,6 +43,7 @@ const game = new Phaser.Game(config)
 //NOTE: remember any 'key' is global and can NOT de reused
 game.scene.add('splashScene', splashScene)
 game.scene.add('titleScene', titleScene)
+game.scene.add('menuScene', menuScene)
 
 // the start scene
 game.scene.start('splashScene')
