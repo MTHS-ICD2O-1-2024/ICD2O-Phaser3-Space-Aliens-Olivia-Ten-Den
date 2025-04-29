@@ -6,6 +6,9 @@
 // Created on: April 23
 // This is the Menu Scene
 
+/**
+ * This class is Menu Scene
+ */
 class MenuScene extends Phaser.Scene {
   /**
   * This method is the construtor.
@@ -13,6 +16,7 @@ class MenuScene extends Phaser.Scene {
   constructor() {
     super({ key: 'menuScene' })
   }
+
   /**
    * Can be defined on your own Scenes.
    * This method is called by the Scene Manager when the scene starts, 
@@ -23,14 +27,16 @@ class MenuScene extends Phaser.Scene {
     this.cameras.main.setBackgroundColor('ffffff')
   }
 
-  /** Can be defined on you own Scenes.
+  /** 
+   * Can be defined on you own Scenes.
    * Use it to load assets.
    */
   preload() {
     console.log('Menu Scene')
   }
 
-  /**Can be defined on your own Scenes.
+  /**
+   * Can be defined on your own Scenes.
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
@@ -39,13 +45,14 @@ class MenuScene extends Phaser.Scene {
   }
 
   /**
+   * Should be overridden by your own Scenes.
    * This method is called once per game step while the scene is running.
    * @param {number} time - The current time.
-   * @param {number} delta - The delta time in ms since the last frame
+   * @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
+    // pass
   }
-  //pass
 }
 
 export default MenuScene

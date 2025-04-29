@@ -6,11 +6,12 @@
 // Created on: April 11
 // This is the Phaser3 game configuration file
 
+// scene import statments
 import SplashScene from './splashScene.js'
 import TitleScene from './titleScene.js'
 import MenuScene from './menuScene.js'
 
-//Our game scenes
+// create the new scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
 const menuScene = new MenuScene()
@@ -29,15 +30,16 @@ const config = {
     },
   },
   // set background color
-  backgroundColor: 0xffffff,
+  backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
-    // center it to middle of page
+    // to center it in middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
 }
 
 const game = new Phaser.Game(config)
+// console.log(game)
 
 // load scenes
 //NOTE: remember any 'key' is global and can NOT de reused
