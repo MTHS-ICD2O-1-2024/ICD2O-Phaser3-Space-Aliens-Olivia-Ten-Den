@@ -11,8 +11,8 @@
  */
 class MenuScene extends Phaser.Scene {
   /**
-  * This method is the constructor.
-  */
+   * This method is the constructor.
+   */
   constructor() {
     super({ key: 'menuScene' })
 
@@ -22,15 +22,15 @@ class MenuScene extends Phaser.Scene {
 
   /**
    * Can be defined on your own Scenes.
-   * This method is called by the Scene Manager when the scene starts, 
+   * This method is called by the Scene Manager when the scene starts,
    *  before preload() and create().
-  * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
-  */
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   init(data) {
     this.cameras.main.setBackgroundColor('ffffff')
   }
 
-  /** 
+  /**
    * Can be defined on your own Scenes.
    * Use it to load assets.
    */
